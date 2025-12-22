@@ -9,7 +9,7 @@ from core.security import create_access_token, verify_token
 from services.search_service import fetch_market_data
 from services.ai_service import generate_market_report
 
-app = FastAPI(title=settings.PROJECT_NAME)
+app = FastAPI(title=settings.Trade_Opportunities_API)
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
