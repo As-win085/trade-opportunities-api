@@ -5,4 +5,5 @@ passlib[bcrypt]
 google-genai
 duckduckgo-search
 slowapi
-python-dotenv
+python-dotenv 
+python-multipart
